@@ -33,6 +33,7 @@ h6 {
     text-transform: uppercase;
     font-family: Montserrat,sans-serif;
     font-weight: 700;
+    color: #FFF;
     letter-spacing: 1px;
 }
 
@@ -90,7 +91,7 @@ a:focus {
 }
 
 .nav.navbar-nav {
-    background-color: rgba(255,255,255,.4);
+    /*background-color: rgba(255,255,255,.4);*/
 }
 
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
@@ -101,9 +102,9 @@ a:focus {
 .navbar-custom ul.nav li a {
 	font-size: 12px;
 	letter-spacing: 1px;
-    color: #444;
+    color: white;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 800;
 }
 
 .navbar-custom.top-nav-collapse ul.nav li a {
@@ -148,13 +149,8 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
     outline: 0;
-    background-color: rgba(255,255,255,.2);
-}
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li.active {
-    outline: 0;
-    background-color: rgba(255,255,255,.2);
+    color: #20ABDC;
+    font-weight: 900;
 }
 
 .navbar-toggle {
@@ -309,11 +305,21 @@ hr {
 ============================ */
 
 .intro {
-	width:100%;
-	position:relative;
-	background: url(../img/bg1.jpg) no-repeat top center;
-    background-size: cover;
-    height: auto;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1475275166152-f1e8005f9854?dpr=1&auto=format&fit=crop&w=1500&h=998&q=80&cs=tinysrgb&crop=&bg=') center center no-repeat;
+  background-size: cover;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    opacity: .6; 
+  }
 }
 
 #intro.intro {
