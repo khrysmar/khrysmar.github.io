@@ -64,7 +64,7 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', 'orange'],
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage'],
+				anchors: ['home', 'about', 'lessons', 'concerts', 'gallery', 'contact'],
 				menu: '#menu',
 				scrollingSpeed: 0,
 				scrollOverflow: true,
@@ -73,7 +73,7 @@
 				onSlideLeave: function(anchorLink, index, slideIndex, direction) {
 			        $.fn.fullpage.setScrollingSpeed(0);
 			        // $('.fp-section').find('.fp-slidesContainer').hide();
-			    },
+			    }, 
 			  
 			    // Display the slides container by fading it in after the next slide has been loaded.
 			    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
@@ -93,12 +93,12 @@
 <body>
 
 <ul id="menu">
-	<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage">Lessons</a></li>
-	<li data-menuanchor="4thpage"><a href="#4thpage">Concerts</a></li>
-	<li data-menuanchor="5thpage"><a href="#5thpage">Gallery</a></li>
-	<li data-menuanchor="6thpage"><a href="#6thpage">Contact Us</a></li>
+	<li data-menuanchor="contact"><a href="#contact">Contact Us</a></li>
+	<li data-menuanchor="gallery"><a href="#gallery">Gallery</a></li>
+	<li data-menuanchor="concerts"><a href="#concerts">Concerts</a></li>
+	<li data-menuanchor="lessons"><a href="#lessons">Lessons</a></li>
+	<li data-menuanchor="about"><a href="#about">About</a></li>
+	<li data-menuanchor="home"><a href="#home">Home</a></li>
 </ul>
 
 
@@ -116,34 +116,12 @@
 	<!-- About -->
 
 	<div class="section" id="section1">
-		<div class="slide">
-			<div class="intro">
-				<h1>About</h1>
-				<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
-				<img src="imgs/slider.png" alt="slider" />
-			</div>
-
-		</div>
-		<div class="slide">
-			<div class="intro">
-				<img src="imgs/1.png" alt="simple" />
-				<h1>Simple</h1>
-				<p>Easy to use. Configurable and customizable.</p>
-			</div>
-		</div>
-		<div class="slide">
-			<div class="intro">
-				<img src="imgs/2.png" alt="Cool" />
-				<h1>Cool</h1>
-				<p>It just looks cool. Impress everybody with a simple and modern web design!</p>
-			</div>
-		</div>
-		<div class="slide">
-			<div class="intro">
-				<img src="imgs/3.png" alt="Compatible" />
-				<h1>Compatible</h1>
-				<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
-			</div>
+		<div class="intro">
+			<h1>About</h1>
+			<p>
+				Designed to fit to different screen sizes as well as tablet and mobile devices.
+				<br /><br /><br /><br /><br /><br />
+			</p>
 		</div>
 	</div>
 
@@ -160,14 +138,42 @@
 	<!-- Concerts -->
 
 	<div class="section" id="section3">
-		<div class="intro">
-			<h1>Concerts</h1>
-			<p>
-				Designed to fit to different screen sizes as well as tablet and mobile devices.
-				<br /><br /><br /><br /><br /><br />
-			</p>
+		<div class="slide">
+			<div class="intro">
+				<h1>Concerts</h1>
+				<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
+				<img src="imgs/slider.png" alt="slider" />
+			</div>
+
 		</div>
-		<img src="imgs/tablets.png" alt="tablets" />
+		<div class="slide">
+			<div class="intro">
+				<img src="imgs/1.png" alt="simple" />
+				<h1>2015 Student Recital</h1>
+				<p>Easy to use. Configurable and customizable.</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<img src="imgs/2.png" alt="Cool" />
+				<h1>2016 Student Recital</h1>
+				<p>It just looks cool. Impress everybody with a simple and modern web design!</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<img src="imgs/3.png" alt="Compatible" />
+				<h1>2017 Student Recital</h1>
+				<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<img src="imgs/3.png" alt="Compatible" />
+				<h1>2018 Student Recital</h1>
+				<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
+			</div>
+		</div>
 	</div>
 
 	<!-- Gallery -->

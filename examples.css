@@ -82,6 +82,7 @@ p{
 #menu li {
 	display:inline-block;
 	margin: 10px;
+	float: right;
 	color: #000;
 	background:#fff;
 	background: rgba(255,255,255, 0.5);
