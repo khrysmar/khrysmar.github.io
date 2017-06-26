@@ -27,20 +27,31 @@
 			background-size: cover;
 		}
 		#section0{
-			background-image: url("https://images.unsplash.com/photo-1459247512518-2d9ea60e7489?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
     		text-align: left;
-
+		}
+		#section0::after {
+			content: "";
+			background-image: url("https://images.unsplash.com/photo-1459247512518-2d9ea60e7489?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
+			background-size: cover;
+			opacity: 0.6;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			z-index: -1;   
 		}
 		#section1 p{
 			/*background-image: url("https://images.unsplash.com/photo-1485561222814-e6c50477491b?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");*/
-			color: black;
+			color: white;
 		}
 		#section1 li {
-			color: black;
+			color: white;
 		}
 		#section1 h1 {
-			color: black;
+			color: white;
 			font-size: 3em;
+			text-transform: uppercase;
 		}
 		#section2 img{
 			margin: 20px 0 0 52px;
@@ -56,12 +67,6 @@
 			font-size: 1.5em;
     		color: white;
 		}
-		.twitter-share-button{
-			position: absolute;
-			z-index: 99;
-			right: 149px;
-			top: 9px;
-		}
 
 	</style>
 
@@ -73,7 +78,7 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', 'white', '#7BAABE', 'green', '#ccddff', 'orange'],
+				sectionsColor: ['#1B292D', '#1B292D', '#1B292D', '#1B292D', '#1B292D', '#1B292D'],
 				anchors: ['home', 'about', 'lessons', 'concerts', 'gallery', 'contact'],
 				menu: '#menu',
 				scrollingSpeed: 0,
@@ -103,12 +108,12 @@
 <body>
 
 <ul id="menu">
-	<li data-menuanchor="contact"><a href="#contact">Contact Us</a></li>
-	<li data-menuanchor="gallery"><a href="#gallery">Gallery</a></li>
-	<li data-menuanchor="concerts"><a href="#concerts">Concerts</a></li>
-	<li data-menuanchor="lessons"><a href="#lessons">Lessons</a></li>
-	<li data-menuanchor="about"><a href="#about">About</a></li>
-	<li data-menuanchor="home"><a href="#home">Home</a></li>
+	<li data-menuanchor="contact"><a class="hover-text" href="#contact">Contact</a></li>
+	<li data-menuanchor="gallery"><a class="hover-text" href="#gallery">Gallery</a></li>
+	<li data-menuanchor="concerts"><a class="hover-text" href="#concerts">Concerts</a></li>
+	<li data-menuanchor="lessons"><a class="hover-text" href="#lessons">Lessons</a></li>
+	<li data-menuanchor="about"><a class="hover-text" href="#about">About</a></li>
+	<li data-menuanchor="home"><a class="hover-text" href="#home">Home</a></li>
 </ul>
 
 
@@ -117,13 +122,13 @@
 	<!-- Home -->
 
 	<div class="section active" id="section0">
-		<p>Welcome to </p>
+		<p class="opa70">Welcome to </p>
 		<br>
 		<h1 style="font-size: 84px; font-weight: 500; margin-bottom: -15px">KHRYSMAR</h1>
 		<h1 style="font-size: 52px">SCHOOL OF MUSIC</h1>
-		<br>
-		<p>Give your loved ones the gift of music.</p>
-<!-- 		<img src="imgs/fullPage.png" alt="fullPage" /> -->
+		<div class="divider div-left"></div>
+		<p  class="opa70" style="margin-bottom: 50px">Give your loved ones the gift of music.</p>
+		<a  class="cta" href="#contact">BOOK A LESSON TODAY</a>
 	</div>
 
 	<!-- About -->
@@ -132,9 +137,10 @@
 		<div class="intro">
 			<img src="https://scontent.xx.fbcdn.net/v/t31.0-8/18595382_1075440675889157_4037986641401634883_o.jpg?oh=b12c7b0dd5ce55fc18326df1dcb61892&oe=59C4EEF7" class="portrait">
 			<br><br>
-			<h1 style="font-weight: 500">About our principal</h1><br>
-			<p class="desc">Our principal instructor, Oksana Skira, is a concert pianist and recording artist. She received her music education at the Music Collegiate in Drohobych, Ukraine. She holds an Honors Piano major at the Lysenko Higher State Institute of Music in Lviv, Ukraine where she obtained her Master's degree in piano performance. </p> <br>
-			<p class="desc">She currently holds the Certificate of Competency and Qualifications as a concert pianist, chamber music ensemble soloist, concertmaster, accompanist, and instructor.</p>
+			<h1>About our principal</h1>
+			<div class="divider div-center"></div>
+			<p class="desc opa70">Our principal instructor, Oksana Skira, is a concert pianist and recording artist. She received her music education at the Music Collegiate in Drohobych, Ukraine. She holds an Honors Piano major at the Lysenko Higher State Institute of Music in Lviv, Ukraine where she obtained her Master's degree in piano performance. </p> <br>
+			<p class="desc opa70">She currently holds the Certificate of Competency and Qualifications as a concert pianist, chamber music ensemble soloist, concertmaster, accompanist, and instructor.</p>
 			<br><br><br><br>
 		</div>
 	</div>
@@ -144,6 +150,7 @@
 	<div class="section" id="section2">
 		<div class="intro">
 			<h1>Lessons</h1>
+			<div class="divider div-center"></div>
 			<p>HTML markup example to define 4 sections.</p>
 			<!-- <img src="imgs/example2.png" alt="example" /> -->
 		</div>
@@ -154,37 +161,33 @@
 	<div class="section" id="section3">
 		<div class="slide">
 			<div class="intro">
-				<h1>Concerts</h1>
-				<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
-				<!-- <img src="imgs/slider.png" alt="slider" /> -->
-			</div>
-
-		</div>
-		<div class="slide">
-			<div class="intro">
-				<!-- <img src="imgs/1.png" alt="simple" /> -->
-				<h1>2015 Student Recital</h1>
-				<p>Easy to use. Configurable and customizable.</p>
+				<p>Past Concerts & Student Recitals</p>
+				<h1>Season of 2018</h1>
+				<div class="divider div-center"></div>
+				<p>Coming soon.</p><br> <p>This is your chance to shine, sign up as a student today!</p>
 			</div>
 		</div>
 		<div class="slide">
 			<div class="intro">
 				<!-- <img src="imgs/2.png" alt="Cool" /> -->
-				<h1>2016 Student Recital</h1>
+				<h1>2017 Student Recital</h1>
+				<div class="divider div-center"></div>
 				<p>It just looks cool. Impress everybody with a simple and modern web design!</p>
 			</div>
 		</div>
 		<div class="slide">
 			<div class="intro">
 				<!-- <img src="imgs/3.png" alt="Compatible" /> -->
-				<h1>2017 Student Recital</h1>
+				<h1>2016 Student Recital</h1>
+				<div class="divider div-center"></div>
 				<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
 			</div>
 		</div>
 		<div class="slide">
 			<div class="intro">
 				<!-- <img src="imgs/3.png" alt="Compatible" /> -->
-				<h1>2018 Student Recital</h1>
+				<h1>2015 Student Recital</h1>
+				<div class="divider div-center"></div>
 				<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
 			</div>
 		</div>
@@ -195,11 +198,9 @@
 	<div class="section" id="section4">
 		<div class="intro">
 			<h1>Gallery</h1>
-			<p>
-				Designed to fit to different screen sizes as well as tablet and mobile devices.
-			</p>
+			<div class="divider div-center"></div>
+			<p>Designed to fit to different screen sizes as well as tablet and mobile devices.</p>
 		</div>
-		<!-- <img src="imgs/tablets.png" alt="tablets" /> -->
 	</div>
 
 	<!-- Contact Us -->
@@ -207,11 +208,11 @@
 	<div class="section" id="section5">
 		<div class="intro">
 			<h1>Contact Us</h1>
-			<p>
-				Designed to fit to different screen sizes as well as tablet and mobile devices.
-			</p>
+			<div class="divider div-center"></div>
+			<p>Contact us today to disucss lesson details.</p><br>
+			<p><span>CELL </span><span> 416 877 2902</span></p>
+			<p><span>EMAIL </span><span> khrysmar777@gmail.com</span></p>
 		</div>
-		<!-- <img src="imgs/tablets.png" alt="tablets" /> -->
 	</div>
 </div>
 
