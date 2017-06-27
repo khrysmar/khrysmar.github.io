@@ -84,7 +84,7 @@ p{
 }
 #menu li {
 	display:inline-block;
-	margin: 14px;
+	margin: 23px 32px;
 	opacity: 0.8;
 	float: right;
 	font-weight: 400;
@@ -104,7 +104,31 @@ p{
 	color: #000;
 	color: #fff;
 	opacity: 1;
+	position: relative;
 }
+
+#menu li a::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    -webkit-transform: scaleX(0); 
+    transform: scaleX(0); 
+    -webkit-transition: all 0.3s ease-in-out 0s; 
+    transition: all 0.3s ease-in-out 0s; 
+}
+
+#menu li a:hover:before {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
 #menu li.active a:hover{
 	color: #000;
 	color: #fff;
@@ -112,13 +136,27 @@ p{
 	font-weight: 600;
 	opacity: 1;
 }
+
+#menu li.active a:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    transform: scaleX(1); 
+}
+
 #menu li:hover{
 	opacity: 1;
 	transition: all 0.5s;
 }
 #menu li a,
 #menu li.active a{
-	padding: 9px 18px;
 	display:block;
 }
 #menu li.active a{
@@ -276,11 +314,4 @@ body[class*="fp-viewing-"] {
 }
 .opa70 {
 	opacity: 0.7;
-}
-.hover-text::before {
-	content: '';
-	position: absolute;
-	width: 10px;
-	height: 2px;
-	background-color: red;
 }
