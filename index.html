@@ -3,72 +3,32 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>fullPage.js One Page Scroll Sites</title>
-	<meta name="author" content="" />
-	<meta name="description" content="" />
+	<title>Khrysmar School of Music</title>
+	<meta name="author" content="Javan Wang"/>
+	<meta name="description" content="Khrysmar School of Music | Tradition, Discipline, Wisdom."/>
 	<meta name="keywords"  content="" />
 	<meta name="Resource-type" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <meta name="keywords" content="javan wang, javan, noom, design, responsive, music, piano, lesson, toronto, canada, arct, performance">
+    <meta name="description" content="Tradition, Discipline, Wisdom.">
+
+    <meta property="og:title"       content="Khrysmar School of Music" />
+    <meta property="og:description" content="Tradition, Discipline, Wisdom." />
+    <meta property="og:image"       content="" />
+
+    <link rel="stylesheet" href="src/css/theme.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+
 
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-
-
-
-	<style>
-
-		#section0 h1 {
-			font-size: 5em;
-			color: #fff;
-			margin:0;
-			padding:0;
-		}
-	 	.section{
-			background-size: cover;
-		}
-		#section0{
-    		text-align: left;
-		}
-		#section0::after {
-			content: "";
-			background-image: url("https://images.unsplash.com/photo-1459247512518-2d9ea60e7489?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
-			background-size: cover;
-			opacity: 0.6;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			position: absolute;
-			z-index: -1;   
-		}
-		#section1 p{
-			/*background-image: url("https://images.unsplash.com/photo-1485561222814-e6c50477491b?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");*/
-			color: white;
-		}
-		#section1 li {
-			color: white;
-		}
-		#section1 h1 {
-			color: white;
-			font-size: 3em;
-			text-transform: uppercase;
-		}
-		#section2 img{
-			margin: 20px 0 0 52px;
-		}
-		#section3 img{
-			bottom: 0px;
-			position: absolute;
-			margin-left: -420px;
-		}
-		.intro p{
-			width: 50%;
-			margin: 0 auto;
-			font-size: 1.5em;
-    		color: white;
-		}
-
-	</style>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -90,7 +50,6 @@
 			        // $('.fp-section').find('.fp-slidesContainer').hide();
 			    }, 
 			  
-			    // Display the slides container by fading it in after the next slide has been loaded.
 			    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
 			        $('.fp-section').find('.fp-slidesContainer').fadeIn(700);
 			        $.fn.fullpage.setScrollingSpeed(0);
@@ -107,7 +66,7 @@
 </head>
 <body>
 
-<ul id="menu">
+<ul id="menu" class="desktop">
 	<li data-menuanchor="contact"><a class="hover-text" href="#contact">Contact</a></li>
 	<li data-menuanchor="gallery"><a class="hover-text" href="#gallery">Gallery</a></li>
 	<li data-menuanchor="concerts"><a class="hover-text" href="#concerts">Concerts</a></li>
@@ -116,18 +75,26 @@
 	<li data-menuanchor="home"><a class="hover-text" href="#home">Home</a></li>
 </ul>
 
+<ul id="menu" class="mobile">
+	<li data-menuanchor="contact"><a class="hover-text" href="#contact">Contact</a></li>
+	<li data-menuanchor="gallery"><a class="hover-text" href="#gallery">Gallery</a></li>
+	<li data-menuanchor="concerts"><a class="hover-text" href="#concerts">Concerts</a></li>
+	<li data-menuanchor="lessons"><a class="hover-text" href="#lessons">Lessons</a></li>
+	<li data-menuanchor="about"><a class="hover-text" href="#about">About</a></li>
+	<li data-menuanchor="home"><a class="hover-text" href="#home">Home</a></li>
+</ul>
 
 <div id="fullpage">
 
 	<!-- Home -->
 
 	<div class="section active" id="section0">
-		<p class="opa70">Welcome to </p>
+		<p>Welcome to </p>
 		<br>
 		<h1 style="font-size: 84px; font-weight: 500; margin-bottom: -15px">KHRYSMAR</h1>
 		<h1 style="font-size: 52px">SCHOOL OF MUSIC</h1>
 		<div class="divider div-left"></div>
-		<p  class="opa70" style="margin-bottom: 50px">Give your loved ones the gift of music.</p>
+		<p  style="margin-bottom: 50px">Give your loved ones the gift of music.</p>
 		<a  class="cta" href="#contact">BOOK A LESSON TODAY</a>
 	</div>
 
@@ -139,8 +106,8 @@
 			<br><br>
 			<h1>About our principal</h1>
 			<div class="divider div-center"></div>
-			<p class="desc opa70">Our principal instructor, Oksana Skira, is a concert pianist and recording artist. She received her music education at the Music Collegiate in Drohobych, Ukraine. She holds an Honors Piano major at the Lysenko Higher State Institute of Music in Lviv, Ukraine where she obtained her Master's degree in piano performance. </p> <br>
-			<p class="desc opa70">She currently holds the Certificate of Competency and Qualifications as a concert pianist, chamber music ensemble soloist, concertmaster, accompanist, and instructor.</p>
+			<p class="desc">Our principal instructor, <b class="opa100">Oksana Skira</b>, is a concert pianist and recording artist. She received her music education at the Music Collegiate in Drohobych, Ukraine. She holds an Honors Piano major at the Lysenko Higher State Institute of Music in Lviv, Ukraine where she obtained her Master's degree in piano performance. </p> <br>
+			<p class="desc">She currently holds the Certificate of Competency and Qualifications as a concert pianist, chamber music ensemble soloist, concertmaster, accompanist, and instructor.</p>
 			<br><br><br><br>
 		</div>
 	</div>
@@ -209,7 +176,7 @@
 		<div class="intro">
 			<h1>Contact Us</h1>
 			<div class="divider div-center"></div>
-			<p>Contact us today to disucss lesson details.</p><br>
+			<p>Contact us today to discuss lesson details.</p><br>
 			<p><span>CELL </span><span> 416 877 2902</span></p>
 			<p><span>EMAIL </span><span> khrysmar777@gmail.com</span></p>
 		</div>
