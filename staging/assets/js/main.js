@@ -68,10 +68,9 @@
 $(document).ready(function() {
 
 $('.wrapper').css('display', 'none');
-
+$('.inner').css('display', 'none');
 $('.wrapper').fadeIn(500);
-
-
+$('.inner').fadeIn(500);
 
 $('.link').click(function(event) {
 
@@ -80,6 +79,7 @@ event.preventDefault();
 newLocation = this.href;
 
 $('.wrapper').fadeOut(500, newpage);
+$('.inner').fadeOut(500, newpage);
 
 });
 

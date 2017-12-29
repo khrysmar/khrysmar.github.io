@@ -10,3 +10,24 @@
 	</nav>
 	<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 </div>
+
+<script>
+$(function () {
+	setNavigation();
+});
+
+function setNavigation() {
+	var path = window.location.pathname;
+	path = path.replace("/staging/", "");
+	path = decodeURIComponent(path);
+	console.log(path);
+
+	$("#nav a").each(function () {
+		var href = $(this).attr('href');
+		console.log(href);
+		if (path.substring(0, href.length) === href) {
+			$(this).closest('a').addClass('active');
+		}
+	});
+}
+</script>
