@@ -123,6 +123,7 @@
 				var path = window.location.pathname;
 				path = path.replace(/\/$/, "");
 				path = decodeURIComponent(path);
+				console.log(path);
 
 				$(".nav a").each(function () {
 					var href = $(this).attr('href');
