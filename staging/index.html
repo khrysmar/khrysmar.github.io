@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title></title>
+		<title>Main Page</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -129,7 +129,7 @@
 					var href = $(this).attr('href');
 					console.log(href);
 					if (path.substring(0, href.length) === href) {
-						$(this).closest('li').addClass('active');
+						$(this).closest('a').addClass('active');
 					}
 				});
 			}
