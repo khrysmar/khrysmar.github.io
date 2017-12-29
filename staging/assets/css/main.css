@@ -2939,15 +2939,7 @@
 			}
 
 			#header a:last-child {
-				/* padding-right: 0; */
-			}
-			#header a:last-child:before {
-				background-color: transparent;
-				transform: none;
-			}
-			#header a:last-child:hover:before {
-				background-color: transparent;
-				transform: none;
+				padding-right: 0; 
 			}
 
 			#header a.navPanelToggle {
