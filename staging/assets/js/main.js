@@ -64,3 +64,31 @@
 	});
 
 })(jQuery);
+
+$(document).ready(function() {
+
+$('.wrapper').css('display', 'none');
+
+$('.wrapper').fadeIn(500);
+
+
+
+$('.link').click(function(event) {
+
+event.preventDefault();
+
+newLocation = this.href;
+
+$('.wrapper').fadeOut(500, newpage);
+
+});
+
+
+
+function newpage() {
+
+window.location = newLocation;
+
+}
+
+});

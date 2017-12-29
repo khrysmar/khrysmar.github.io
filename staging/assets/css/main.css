@@ -20,6 +20,7 @@
 	#three footer {
 		text-align: center;
 		margin: 0 auto;
+		width: 100%;
 	}
 	.style3 {
 		background-color: #000;
@@ -31,6 +32,12 @@
 		position: relative;
 		/* top: 0; */
 	}
+	.videos {
+		margin-bottom: 3em !important;
+	}
+/*	.style3#lessons {
+		background-image: url("https://images.unsplash.com/photo-1485561222814-e6c50477491b?auto=format&fit=crop&w=1950&q=80");
+	}*/
 	.style3:before {
 		-moz-transition: opacity 3s ease;
 		-webkit-transition: opacity 3s ease;
@@ -2849,7 +2856,6 @@
 			cursor: default;
 			opacity: 0.25;
 		}
-
 		@media screen and (max-width: 480px) {
 
 			input[type="submit"],
@@ -2933,7 +2939,15 @@
 			}
 
 			#header a:last-child {
-				padding-right: 0;
+				/* padding-right: 0; */
+			}
+			#header a:last-child:before {
+				background-color: transparent;
+				transform: none;
+			}
+			#header a:last-child:hover:before {
+				background-color: transparent;
+				transform: none;
 			}
 
 			#header a.navPanelToggle {
@@ -3291,6 +3305,13 @@
 				font-size: 1.5em;
 			}
 
+		}
+
+		.button.nav {
+			background-color: transparent;
+			border: white solid 2px;
+			letter-spacing: 0px;
+			text-transform: none;
 		}
 
 /* Footer */
