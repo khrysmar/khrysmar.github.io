@@ -121,7 +121,7 @@
 
 			function setNavigation() {
 				var path = window.location.pathname;
-				path = path.replace(/\/$/, "");
+				path = path.replace("/staging/", "");
 				path = decodeURIComponent(path);
 				console.log(path);
 
