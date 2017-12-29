@@ -20,7 +20,7 @@ body {
 	display: none
 }
 html, body {
-    font-size: 18px;
+    font-size: 14px;
 }
 body[class*="fp-viewing-"] {
 	display: block
@@ -94,14 +94,6 @@ h1{
 	text-transform: uppercase;
 	font-weight: 500;
 }
-.superheading {
-	font-size: 84px;
-	font-weight: 500;
-	margin-bottom: -15px;
-}
-.subheading {
-	font-size: 52px;
-}
 p{
 	font-size: 2em;
 	color: #BABEC0;
@@ -114,14 +106,6 @@ p{
 	color: #fff;
 	margin:0;
 	padding:0;
-}
-#section0{
-	text-align: left;
-}
-#section0 .fp-tableCell {
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 100px;
 }
 #section1 li {
 	color: white;
@@ -289,55 +273,38 @@ p.desc {
 }
 
 .mobile {
-	visibility: hidden;
+	visibility: visible;	
 }
 .desktop {
-	visibility: visible;
+	visibility: hidden;
 }
-h1{
-	font-size: 2em;
-	color: white;
-	text-transform: uppercase;
-	font-weight: 500;
+#section0 .fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 0px;
 }
-.div-left {
-	margin: 40px 0; 
+#section0 {
+	text-align: center;
 }
-/*Mobile only*/
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
 	.mobile {
-		visibility: visible;	
+		visibility: hidden;
 	}
 	.desktop {
-		display: none;
+		visibility: visible;
+	}
+	#section0{
+		text-align: left;
 	}
 	#section0 .fp-tableCell {
-		display: table-cell;
-		vertical-align: middle;
-		padding-left: 0px;
-	}
-	#section0 {
-		text-align: center;
+	    display: table-cell;
+	    vertical-align: middle;
+	    padding-left: 100px;
 	}
 	html, body {
-	    font-size: 14px;
+	    font-size: 18px;
 	}
-	#menu.mobile {
-		font-size: 10px;
-		width: 100vw;
-	}
-	.superheading {
-		font-size: 36px !important;
-		font-weight: 500;
-		margin-bottom: -15px;
-	}
-	.subheading {
-		font-size: 24px !important;
-	}
-	.intro p {
-	    width: 80%;
-	}
-/*	h1{
+	h1{
 		font-size: 2em;
 		color: white;
 		text-transform: uppercase;
@@ -345,7 +312,7 @@ h1{
 	}
 	.div-left {
 		margin: 40px 0; 
-	}*/
+	}
 }
 
 
