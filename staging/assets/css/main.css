@@ -3325,6 +3325,11 @@
 	margin-left: -5%;
 
 	}
+	.logomark {
+		margin-left: 0;
+		margin-right: 1em;
+		height: 24px;
+	}
 
 /* Footer */
 
