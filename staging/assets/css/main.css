@@ -86,6 +86,7 @@
 		margin: 0 auto 2em auto;
 		font-size: 1.2em;
 	}
+
 	@media screen and (max-width: 980px) {
 
 		.style3 {
@@ -2876,7 +2877,7 @@
 	}
 
 		.subpage #header {
-			top: 0;
+			/*top: 0;*/
 			/* position: fixed; */
 			height: 7em;
 			line-height: 7em;
@@ -3255,7 +3256,7 @@
 
 		@media screen and (max-width: 736px) {
 			#banner .divider {
-				margin: 40px auto;
+				margin: 30px auto;
 			}
 			#banner {
 				padding: 7em 0 3em 0;
@@ -3267,7 +3268,7 @@
 				}
 
 				#banner h1 {
-					font-size: 2em;
+					font-size: 2.5em;
 				}
 
 				#banner h3 {
@@ -3293,9 +3294,9 @@
 
 		@media screen and (max-width: 480px) {
 
-			#banner h1 {
+/*			#banner h1 {
 				font-size: 1.5em;
-			}
+			}*/
 
 		}
 
@@ -3305,6 +3306,25 @@
 			letter-spacing: 0px;
 			text-transform: none;
 		}
+
+	.image-cropper {
+	width: 250px;
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-bottom: 1em;
+	}
+
+	img.circular {
+	display: inline;
+	margin: 0 auto;
+	height: 100%;
+	width: auto;
+	border-radius: 0 !important;
+	margin-left: -5%;
+
+	}
 
 /* Footer */
 
