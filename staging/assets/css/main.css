@@ -107,6 +107,16 @@
 	/* border: white solid 12px; */
 	/* box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 1); */
 }
+	
+.portrait2 {
+	height: 250px;
+	width: 250px;
+	/* top: -142px; */
+	border-radius: 50%;
+	filter: brightness(100%);
+	margin: auto;
+	}
+
 
 /*hover fun*/
 #nav a {
