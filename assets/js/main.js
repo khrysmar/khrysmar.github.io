@@ -93,12 +93,12 @@ window.location = newLocation;
 
 });
 
-$('a').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 800);
-    return false;
-});
+// $('a').click(function(){
+//     $('html, body').animate({
+//         scrollTop: $( $(this).attr('href') ).offset().top
+//     }, 800);
+//     return false;
+// });
 
 // $(document).ready(function(){
 //   $("a").on('click', function(event) {
