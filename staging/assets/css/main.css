@@ -114,9 +114,25 @@
 	/* top: -142px; */
 	border-radius: 50%;
 	filter: brightness(100%);
-	margin: auto;
+	margin-left: 2em;
+	margin-right: 2em;
 	}
 
+	@media screen and (max-width: 980px) {
+
+		.portrait2 {
+			margin-bottom: 3em;
+		}
+
+	}
+
+	@media screen and (min-width: 980px) {
+
+		.portrait2:first-child {
+			margin-right: 3em;
+		}
+
+	}
 
 /*hover fun*/
 #nav a {
