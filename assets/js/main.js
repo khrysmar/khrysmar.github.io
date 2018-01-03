@@ -92,3 +92,25 @@ window.location = newLocation;
 }
 
 });
+
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 800);
+    return false;
+});
+
+// $(document).ready(function(){
+//   $("a").on('click', function(event) {
+
+//     if (this.hash !== "") {
+//       event.preventDefault();
+
+//       var hash = this.hash;
+//       $('html, body').animate({
+//         scrollTop: $(hash).offset().top
+//       }, 800, function(){
+//       });
+//     } // End if
+//   });
+// });
