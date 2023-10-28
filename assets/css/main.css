@@ -3375,6 +3375,19 @@
 
 /* Footer */
 
+	#affiliates {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #bfbfbf;
+		margin-bottom: 40px;
+	}
+
+	#affiliates p {
+		font-size: 1rem;
+		margin: 0 30px 0 0;
+	}
+
 	#footer {
 		padding: 2em 0;
 		background: rgba(27, 41, 45, 1);
