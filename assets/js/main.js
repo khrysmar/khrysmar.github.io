@@ -4,6 +4,38 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
+// Load header and footer
+window.onload = function() {
+	// Load header
+	fetch("assets/js/header.html")
+		.then(response => response.text())
+		.then(data => {
+			document.getElementById("header").innerHTML = data;
+			setNavigation(); // Call setNavigation after the header is loaded
+		});
+
+	// Load footer
+	fetch("assets/js/footer.html")
+		.then(response => response.text())
+		.then(data => document.getElementById("footer").innerHTML = data);
+}
+
+function setNavigation() {
+	var path = window.location.pathname;
+	path = path.replace(/\//g, ""); // Replace all occurrences of "/"
+	path = decodeURIComponent(path);
+
+	$("#nav a").each(function () {
+		var href = $(this).attr('href');
+		if (href !== undefined) {
+			href = href.replace(/\//g, ""); // Replace all occurrences of "/" in href
+			if (path.substring(path.length - href.length) === href) {
+				$(this).addClass('active');
+			}
+		}
+	});
+}
+
 (function($) {
 
 	// Breakpoints.
