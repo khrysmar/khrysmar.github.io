@@ -1,0 +1,5 @@
+{
+    "livePreview.customExternalBrowser": "Chrome",
+    "livePreview.openPreviewTarget": "External Browser",
+    "livePreview.hostIP": "127.0.0.1"
+}
