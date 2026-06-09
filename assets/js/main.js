@@ -83,10 +83,6 @@ $('.inner').fadeOut(500, newpage);
 
 });
 
-var url = data.url + "&output=embed";
-window.location.replace(url);
-
-
 function newpage() {
 
 window.location = newLocation;

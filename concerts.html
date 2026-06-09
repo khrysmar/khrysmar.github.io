@@ -4,7 +4,7 @@
 		<title>Concerts | Khrysmar Music Studio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css?v=20250609" />
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
 		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -217,11 +217,9 @@
 				var path = window.location.pathname;
 				path = path.replace("\/", "");
 				path = decodeURIComponent(path);
-				console.log(path);
 
 				$("#nav a").each(function () {
 					var href = $(this).attr('href');
-					console.log(href);
 					if (path.substring(0, href.length) === href) {
 						$(this).closest('a').addClass('active');
 					}
